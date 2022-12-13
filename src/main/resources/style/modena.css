@@ -1,0 +1,98 @@
+  .check-box > .box {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+.check-box:hover > .box {
+    -fx-color: -fx-hover-base;
+}
+.check-box:armed .box {
+    -fx-color: -fx-pressed-base;
+}
+.check-box:focused > .box {
+    -fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color, -fx-faint-focus-color, -fx-body-color;
+    -fx-background-insets: -0.2, 1, 2, -1.4, 2.6;
+    -fx-background-radius: 3, 2, 1, 4, 1;
+}
+.check-box:disabled {
+    -fx-opacity: 0.4;
+}
+.check-box:show-mnemonic > .mnemonic-underline {
+    -fx-stroke: -fx-text-base-color;
+}
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+}
+.check-box {
+    -fx-label-padding: 0.0em 0.0em 0.0em 0.416667em; /* 0 0 0 5 */
+    -fx-text-fill: -fx-text-background-color;
+}
+.check-box > .box {
+    -fx-background-radius: 3, 2, 1;
+    -fx-padding: 0.166667em 0.166667em 0.25em 0.25em; /* 2 2 3 3 */
+}
+.check-box > .box > .mark {
+    -fx-background-color: null;
+    -fx-padding: 0.416667em 0.416667em 0.5em 0.5em; /* 5 5 6 6 */
+    -fx-shape: "M-0.25,6.083c0.843-0.758,4.583,4.833,5.75,4.833S14.5-1.5,15.917-0.917c1.292,0.532-8.75,17.083-10.5,17.083C3,16.167-1.083,6.833-0.25,6.083z";
+}
+.check-box:indeterminate > .box {
+    -fx-padding: 0;
+}
+.check-box:indeterminate  > .box > .mark {
+    -fx-shape: "M0,0H10V2H0Z";
+    -fx-scale-shape: false;
+    -fx-padding: 0.666667em;
+}
+
+.check-box {
+    -material-design-color: #3f51b5;
+    -material-design-color-transparent-12: #3f51b51f;
+    -material-design-color-transparent-24: #3f51b53e;
+    -material-design-color-transparent-40: #3f51b566;
+
+}
+
+.check-box > .box > .mark {
+    -fx-background-color: null;
+    -fx-padding: 0.416667em 0.416667em 0.5em 0.5em; /* 5 5 6 6 */
+    -fx-shape: "M-0.25,6.083c0.843-0.758,4.583,4.833,5.75,4.833S14.5-1.5,15.917-0.917c1.292,0.532-8.75,17.083-10.5,17.083C3,16.167-1.083,6.833-0.25,6.083z";
+}
+
+.check-box > .box {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-color: #0000008a;
+    -fx-border-width: 2px;
+    -fx-border-radius: 2px;
+    -fx-padding: 0.083333em; /* 1px */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.check-box:selected > .box {
+    -fx-background-color: -material-design-color;
+    -fx-background-radius: 2px;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+}
+
+.check-box:focused > .box {
+    -fx-background-color: #6161613e, transparent;
+    -fx-background-insets: -14, 0;
+    -fx-background-radius: 1024;
+}
+
+.check-box:selected:focused > .box {
+    -fx-background-color: -material-design-color-transparent-24, -material-design-color;
+    -fx-background-insets: -14, 0;
+    -fx-background-radius: 1024, 2px;
+    -fx-border-color: transparent;
+}
