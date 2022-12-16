@@ -1,27 +1,21 @@
 package com.example.customcontrolsinjjavafx;
 
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.layout.HBox;
-import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.util.Locale;
 
 import static javafx.application.Application.launch;
 
 public class CombinedControl extends HBox {
     private TextField textField;
-    private Button button;
-
-
+    private Button    button;
     // ******************** Constructors **************************************
     public CombinedControl() {
-        getStylesheets().add(CombinedControl.class.getResource("combined.css").toExternalForm());
+        getStylesheets().add(CombinedControl.class.getResource("style/focussed.css").toExternalForm());
         initGraphics();
         registerListeners();
     }
