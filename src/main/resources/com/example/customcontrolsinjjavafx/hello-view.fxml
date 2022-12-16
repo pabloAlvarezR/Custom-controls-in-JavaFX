@@ -12,6 +12,10 @@
 
 <?import com.example.customcontrolsinjjavafx.CombinedControl?>
 <?import javafx.scene.layout.HBox?>
+<?import com.example.customcontrolsinjjavafx.ExtendedControl?>
+<?import com.example.customcontrolsinjjavafx.CustomControl?>
+<?import com.example.customcontrolsinjjavafx.RegionControl?>
+<?import com.example.customcontrolsinjjavafx.CanvasControl?>
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="600.0" spacing="30.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <CheckBox contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="681.0" stylesheets="@style/modena.css" text="Hoy te toca" textAlignment="CENTER">
@@ -24,6 +28,12 @@
       </CheckBox>
        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
            <CombinedControl></CombinedControl>
+           <ExtendedControl></ExtendedControl>
+           <CustomControl></CustomControl>
+           <RegionControl type="CLOSE"></RegionControl>
+           <RegionControl type="MINIMIZE"></RegionControl>
+           <RegionControl type="ZOOM"></RegionControl>
+           <CanvasControl></CanvasControl>
        </HBox>
    </children>
 </VBox>
