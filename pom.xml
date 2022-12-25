@@ -38,6 +38,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>software.amazon.disco</groupId>
+            <artifactId>disco-java-agent-api</artifactId>
+            <version>0.12.0</version>
+        </dependency>
     </dependencies>
 
     <build>
