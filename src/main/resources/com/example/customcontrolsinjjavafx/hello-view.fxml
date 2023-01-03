@@ -16,8 +16,10 @@
 <?import com.example.customcontrolsinjjavafx.CustomControl?>
 <?import com.example.customcontrolsinjjavafx.RegionControl?>
 <?import com.example.customcontrolsinjjavafx.CanvasControl?>
+<?import javafx.scene.control.Label?>
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="600.0" spacing="30.0" fx:controller="com.example.customcontrolsinjjavafx.HelloController" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
+       <Label text="#1" alignment="CENTER_LEFT"/>
       <CheckBox contentDisplay="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="681.0" stylesheets="@style/modena.css" text="Custom Controls" textAlignment="CENTER">
          <font>
             <Font size="23.0" />
@@ -42,7 +44,5 @@
 
            <CanvasControl></CanvasControl>
        </HBox>
-
-       <Button mnemonicParsing="false" onAction="#JKD" style="-fx-background-color: #91552d;" text="JDK buttler" textFill="WHITE" GridPane.halignment="CENTER"></Button>
    </children>
 </VBox>

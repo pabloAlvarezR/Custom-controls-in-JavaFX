@@ -10,13 +10,5 @@ import java.io.IOException;
 
 public class HelloController {
 
-    public void JKD(ActionEvent actionEvent) {
-        JDKButtler coche = new JDKButtler();
-        Stage stage = new Stage();
-        try {
-            coche.start(stage);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
+
 }
